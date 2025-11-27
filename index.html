@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Leo México | Asesoría Satelital, Instalación y Soporte – CiBERALL®</title>
+    <meta name="description" content="Información sobre Amazon Leo en México. Asesoría profesional, instalación y soporte de soluciones de internet satelital y redes híbridas con CiBERALL®.">
+    <meta name="keywords" content="Amazon Leo, internet satelital Amazon, Amazon Leo México, satélite LEO, internet satelital, CiBERALL, Starlink, Viasat, internet para zonas rurales">
+    <link rel="canonical" href="https://amazon-leo.xyz/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Amazon Leo México | Asesoría, Instalación y Soporte – CiBERALL®">
+    <meta property="og:description" content="Portal informativo independiente sobre Amazon Leo en México. CiBERALL® te asesora en soluciones satelitales, instalación y soporte técnico profesional.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amazon-leo.xyz/">
+    <!-- Open Graph image actualizada -->
+    <meta property="og:image" content="https://ipviasatelite.com/amazon-leo/imagenes/og-amazon-leo-ciberall.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amazon Leo México | Asesoría Satelital – CiBERALL®">
+    <meta name="twitter:description" content="Asesoría, venta, instalación y soporte de soluciones satelitales actuales y futuras como Amazon Leo, con CiBERALL®.">
+    <meta name="twitter:image" content="https://ipviasatelite.com/amazon-leo/imagenes/og-amazon-leo-ciberall.jpg">
+
+    <!-- Favicon (CiBERALL) -->
+    <link rel="icon" href="https://ciberall.net/favicon.ico" type="image/x-icon">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #000000;
+            --primary: #3399CC;
+            --accent: #FF6F00;
+            --highlight: #A8FF00;
+            --text-main: #E5E5E5;
+            --text-muted: #9FA4AF;
+            --card-bg: rgba(10, 10, 15, 0.92);
+            --border-soft: rgba(255, 255, 255, 0.08);
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Exo', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: radial-gradient(circle at top left, rgba(51,153,204,0.22), rgba(0,0,0,0.96));
+            border-bottom: 1px solid var(--border-soft);
+            backdrop-filter: blur(12px);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0.6rem 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+        }
+
+        .brand-main {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .brand-logo {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.25);
+            overflow: hidden;
+            background: radial-gradient(circle, rgba(168,255,0,0.15), transparent);
+        }
+
+        .brand-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .brand-text .main {
+            font-family: 'Russo One', system-ui;
+            font-size: 1.05rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .brand-text .sub {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        .brand-partner {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-partner img {
+            height: 30px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 0 6px rgba(0,0,0,0.8));
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--highlight);
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent), var(--primary));
+            transition: width 0.2s ease-out;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .nav-phone {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: right;
+        }
+
+        .nav-phone span {
+            display: block;
+        }
+
+        .btn-primary, .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.6rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid transparent;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.18s ease-out;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), #FF9900);
+            border-color: rgba(0,0,0,0.7);
+            color: #000;
+            box-shadow: 0 0 18px rgba(255,111,0,0.46);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px) scale(1.02);
+            box-shadow: 0 0 28px rgba(255,111,0,0.7);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border-color: rgba(255,255,255,0.3);
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--highlight);
+        }
+
+        /* Video background hero */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 1.25rem 3rem;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: absolute;
+            inset: 0;
+            z-index: -2;
+            background: #000;
+        }
+
+        .video-foreground {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .video-foreground iframe {
+            width: 120%;
+            height: 120%;
+            position: absolute;
+            top: -10%;
+            left: -10%;
+            border: 0;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at top left, rgba(51,153,204,0.32), transparent 55%),
+                radial-gradient(circle at bottom right, rgba(255,111,0,0.25), transparent 55%),
+                linear-gradient(to bottom, rgba(0,0,0,0.72), rgba(0,0,0,0.94));
+            z-index: -1;
+        }
+
+        .hero-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.2fr);
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .hero-banner {
+            max-width: 480px;
+            margin-bottom: 1rem;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--border-soft);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+        }
+
+        .hero-kicker {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--highlight);
+            margin-bottom: 0.6rem;
+        }
+
+        .hero-title {
+            font-family: 'Russo One', system-ui;
+            font-size: clamp(2.3rem, 3vw, 3rem);
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .hero-title span.leo {
+            color: var(--primary);
+        }
+
+        .hero-title span.mx {
+            color: var(--accent);
+        }
+
+        .hero-subtitle {
+            margin-top: 0.9rem;
+            font-size: 1rem;
+            color: var(--text-main);
+            max-width: 34rem;
+        }
+
+        .hero-subtitle strong {
+            color: var(--highlight);
+            font-weight: 600;
+        }
+
+        .hero-ctas {
+            margin-top: 1.4rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+        }
+
+        .hero-footnote {
+            margin-top: 0.9rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            max-width: 32rem;
+        }
+
+        .hero-card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            border: 1px solid var(--border-soft);
+            padding: 1.4rem 1.4rem 1.2rem;
+            box-shadow: 0 18px 40px rgba(0,0,0,0.7);
+        }
+
+        .hero-card-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+        }
+
+        .hero-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .hero-card h2 span {
+            color: var(--highlight);
+        }
+
+        .hero-card p {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            margin-bottom: 0.9rem;
+        }
+
+        .hero-chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .chip {
+            font-size: 0.7rem;
+            padding: 0.25rem 0.65rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--text-muted);
+            background: rgba(0,0,0,0.7);
+        }
+
+        .chip.highlight {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(255,111,0,0.08);
+        }
+
+        .hero-card-note {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            border-top: 1px dashed rgba(255,255,255,0.18);
+            padding-top: 0.55rem;
+            margin-top: 0.35rem;
+        }
+
+        main {
+            background: radial-gradient(circle at top, rgba(51,153,204,0.14), transparent 55%);
+        }
+
+        section {
+            padding: 3.5rem 1.25rem;
+        }
+
+        .section-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 1.8rem;
+        }
+
+        .section-kicker {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--highlight);
+            margin-bottom: 0.4rem;
+        }
+
+        .section-title {
+            font-family: 'Russo One';
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+
+        .section-description {
+            margin-top: 0.4rem;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            max-width: 42rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.3fr);
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-soft);
+            border-radius: 18px;
+            padding: 1.5rem 1.5rem 1.3rem;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--text-muted);
+            padding: 0.2rem 0.7rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.22);
+            margin-bottom: 0.6rem;
+        }
+
+        .list-check {
+            margin-top: 0.7rem;
+            list-style: none;
+        }
+
+        .list-check li {
+            position: relative;
+            padding-left: 1.4rem;
+            margin-bottom: 0.45rem;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .list-check li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--highlight);
+            font-weight: 700;
+        }
+
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: 0.7rem;
+        }
+
+        .pill {
+            font-size: 0.75rem;
+            border-radius: 999px;
+            padding: 0.3rem 0.7rem;
+            border: 1px solid rgba(255,255,255,0.18);
+            color: var(--text-muted);
+        }
+
+        .pill.strong {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .timeline {
+            list-style: none;
+            margin-top: 0.7rem;
+            border-left: 1px solid rgba(255,255,255,0.16);
+            padding-left: 1rem;
+        }
+
+        .timeline li {
+            margin-bottom: 0.5rem;
+            padding-left: 0.2rem;
+            font-size: 0.88rem;
+        }
+
+        .timeline span.year {
+            color: var(--highlight);
+            font-weight: 600;
+            margin-right: 0.35rem;
+        }
+
+        .highlight-box {
+            margin-top: 0.9rem;
+            font-size: 0.85rem;
+            padding: 0.7rem 0.9rem;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.02);
+            border: 1px dashed rgba(255,255,255,0.18);
+            color: var(--text-muted);
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .solution-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--border-soft);
+            padding: 1.1rem;
+            font-size: 0.86rem;
+        }
+
+        .solution-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--text-muted);
+            margin-bottom: 0.3rem;
+        }
+
+        .solution-title {
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+            color: #ffffff;
+        }
+
+        .solution-card p {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border-radius: 14px;
+            border: 1px solid var(--border-soft);
+            padding: 1rem 1.1rem 0.9rem;
+        }
+
+        .faq-item h3 {
+            font-size: 0.98rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .faq-item p {
+            font-size: 0.86rem;
+            color: var(--text-main);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            border: 1px solid var(--border-soft);
+            padding: 1.4rem 1.5rem;
+        }
+
+        .contact-row {
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-row strong {
+            color: var(--highlight);
+        }
+
+        .contact-row a {
+            color: var(--primary);
+        }
+
+        form {
+            display: grid;
+            gap: 0.7rem;
+            margin-top: 0.7rem;
+        }
+
+        label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        input, textarea {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 0.55rem 0.7rem;
+            font-family: 'Exo', sans-serif;
+            background: rgba(0,0,0,0.7);
+            color: var(--text-main);
+            font-size: 0.85rem;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 1px rgba(51,153,204,0.4);
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .form-footnote {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-top: 0.35rem;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-soft);
+            background: #020203;
+            padding: 1.5rem 1.25rem 1rem;
+        }
+
+        .footer-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .footer-legal {
+            max-width: 460px;
+        }
+
+        .legal-strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            text-align: right;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--highlight);
+        }
+
+        /* Responsive */
+        @media (max-width: 980px) {
+            .hero-inner,
+            .grid-2,
+            .solutions-grid,
+            .faq-grid,
+            .contact-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .solutions-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .hero {
+                padding-top: 5.3rem;
+            }
+        }
+
+        @media (max-width: 720px) {
+            nav ul {
+                display: none; /* Versión simple sin menú móvil avanzado por ahora */
+            }
+
+            .nav-cta {
+                display: none;
+            }
+
+            .hero-inner {
+                text-align: left;
+            }
+
+            .hero-ctas {
+                justify-content: flex-start;
+            }
+
+            .solutions-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .faq-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .brand {
+                gap: 0.5rem;
+            }
+
+            .brand-partner img {
+                height: 24px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD básico para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CiBERALL",
+      "url": "https://amazon-leo.xyz/",
+      "logo": "https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png",
+      "sameAs": [
+        "https://ciberall.net/",
+        "https://ipviasatelite.com/"
+      ],
+      "description": "Portal informativo sobre Amazon Leo en México y soluciones de conectividad satelital integradas por CiBERALL."
+    }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="brand">
+            <a href="https://www.ciberall.net/" target="_blank" rel="noopener" class="brand-main">
+                <div class="brand-logo">
+                    <img src="https://ciberall.net/img/LOGOTIPO%20CIBERALL%20MARCA%20REGISTRADA.png" alt="Logo CiBERALL">
+                </div>
+                <div class="brand-text">
+                    <span class="main">CiBERALL®</span>
+                    <span class="sub">Internet Satelital & Redes Híbridas</span>
+                </div>
+            </a>
+            <a href="https://ipviasatelite.com.mx/" target="_blank" rel="noopener" class="brand-partner" aria-label="IPviaSatelite.com.mx">
+                <img src="https://ipviasatelite.com/IPviaSatelite_Logo.png" alt="Logo IPviaSatelite">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#que-es">Amazon Leo</a></li>
+                <li><a href="#ciberall">¿Por qué CiBERALL?</a></li>
+                <li><a href="#disponibilidad">Disponibilidad México</a></li>
+                <li><a href="#soluciones">Soluciones actuales</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-cta">
+            <div class="nav-phone">
+                <span>Asesor directo</span>
+                <span>+52 55 1126 4075</span>
+            </div>
+            <a href="https://wa.me/525511264075?text=Hola%20CiBERALL,%20quiero%20informaci%C3%B3n%20sobre%20Amazon%20Leo%20y%20conectividad%20satelital." class="btn-primary">
+                WhatsApp
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="hero" id="top">
+    <div class="video-background">
+        <div class="video-foreground">
+            <!-- Video de YouTube de fondo -->
+            <iframe 
+                src="https://www.youtube.com/embed/OBhsMZS2y0Y?autoplay=1&mute=1&loop=1&playlist=OBhsMZS2y0Y&controls=0&showinfo=0&modestbranding=1&rel=0"
+                title="Amazon Leo video background"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner">
+        <div>
+            <div class="hero-banner">
+                <img src="https://ipviasatelite.com/amazon-leo/imagenes/internet-satelital-amazon-leo-mexico-ciberall.png" alt="Internet Satelital Amazon Leo México CiBERALL">
+            </div>
+            <div class="hero-kicker">Internet satelital de nueva generación</div>
+            <h1 class="hero-title">
+                <span class="leo">Amazon Leo</span> <span class="mx">México</span><br>
+                con asesoría profesional CiBERALL®
+            </h1>
+            <p class="hero-subtitle">
+                Amazon Leo será una constelación LEO de alta capacidad. Mientras su servicio llega a México,
+                <strong>CiBERALL®</strong> te acompaña con asesoría estratégica, integración de redes satelitales,
+                instalación y soporte técnico especializado.
+            </p>
+            <div class="hero-ctas">
+                <a href="https://wa.me/525511264075?text=Me%20interesa%20Amazon%20Leo%20y%20opciones%20de%20internet%20satelital%20con%20CiBERALL."
+                   class="btn-primary">
+                    Recibir asesoría ahora
+                </a>
+                <a href="#disponibilidad" class="btn-outline">
+                    ¿Cuándo llegará a México?
+                </a>
+            </div>
+            <p class="hero-footnote">
+                Este sitio es un portal informativo independiente operado por CiBERALL® y no pertenece a Amazon.
+                Nuestro objetivo es orientarte sobre <strong>Amazon Leo</strong> y las alternativas satelitales disponibles hoy.
+            </p>
+        </div>
+
+        <aside class="hero-card">
+            <div class="hero-card-title">Resumen ejecutivo</div>
+            <h2>Prepárate para <span>Amazon Leo</span> sin dejar de estar conectado hoy</h2>
+            <p>
+                Como proveedor de conectividad, puedes planear tu estrategia alrededor de Amazon Leo
+                mientras operas con soluciones satelitales reales y disponibles en este momento.
+            </p>
+            <div class="hero-chip-row">
+                <span class="chip highlight">Asesoría estratégica</span>
+                <span class="chip">Instalación profesional</span>
+                <span class="chip">Redes multi-WAN</span>
+                <span class="chip">Soporte técnico dedicado</span>
+            </div>
+            <a href="#contacto" class="btn-primary" style="width:100%; justify-content:center; margin-top:0.2rem;">
+                Quiero que me contacten
+            </a>
+            <div class="hero-card-note">
+                CiBERALL® integra hoy tecnologías como Starlink, Viasat, fibra óptica y enlaces 4G/5G,
+                y se mantiene lista para incorporar Amazon Leo cuando esté disponible en la región.
+            </div>
+        </aside>
+    </div>
+</section>
+
+<main>
+    <!-- ¿Qué es Amazon Leo? -->
+    <section id="que-es">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker">Contexto tecnológico</div>
+                <h2 class="section-title">¿Qué es Amazon Leo?</h2>
+                <p class="section-description">
+                    Amazon Leo es la nueva red de internet satelital de órbita terrestre baja (LEO) desarrollada por Amazon.
+                    Su objetivo es ofrecer conectividad de alta velocidad y baja latencia en todo el mundo, especialmente
+                    en zonas donde la fibra óptica y las redes tradicionales no llegan.
+                </p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <span class="badge">Arquitectura</span>
+                    <h3>Constelación LEO de alta capacidad</h3>
+                    <p>
+                        La red de Amazon Leo se basa en miles de satélites de órbita baja interconectados por enlaces ópticos,
+                        lo que permite reducir la latencia y aumentar la resiliencia de la red. Este modelo es ideal para:
+                    </p>
+                    <ul class="list-check">
+                        <li>Zonas rurales y remotas sin fibra óptica.</li>
+                        <li>Operaciones móviles, marítimas y temporales.</li>
+                        <li>Backhaul para redes privadas y Wi-Fi público.</li>
+                        <li>Aplicaciones empresariales que requieren alta disponibilidad.</li>
+                    </ul>
+                    <div class="pill-row">
+                        <span class="pill strong">Órbita baja (LEO)</span>
+                        <span class="pill">Baja latencia</span>
+                        <span class="pill">Cobertura amplia</span>
+                        <span class="pill">Perfil empresarial y residencial</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="badge">Visión a futuro</span>
+                    <h3>¿Dónde entra CiBERALL®?</h3>
+                    <p>
+                        CiBERALL® es un integrador de soluciones satelitales con experiencia en redes híbridas
+                        (satelital + fibra + LTE/5G). Nuestro rol es ayudarte a:
+                    </p>
+                    <ul class="list-check">
+                        <li>Entender el alcance real de Amazon Leo en México.</li>
+                        <li>Evaluar escenarios de migración o coexistencia con Starlink y otros proveedores.</li>
+                        <li>Diseñar arquitecturas multi-WAN para alta disponibilidad.</li>
+                        <li>Implementar, monitorear y dar soporte a tu infraestructura de conectividad.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        Mientras Amazon Leo avanza en su despliegue global, te ayudamos a operar con tecnologías disponibles
+                        hoy sin perder de vista la siguiente ola de innovación satelital.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué CiBERALL -->
+    <section id="ciberall">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker">Aliado estratégico</div>
+                <h2 class="section-title">¿Por qué CiBERALL® como socio satelital?</h2>
+                <p class="section-description">
+                    Más que vender antenas, CiBERALL® diseña soluciones de conectividad. Combinamos experiencia en
+                    telecomunicaciones satelitales, redes IP empresariales y multi-WAN para que tu proyecto no dependa
+                    de una sola tecnología.
+                </p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Expertise técnico + visión de negocio</h3>
+                    <p>
+                        CiBERALL® integra desde hace años enlaces satelitales GEO, LEO y soluciones de fibra óptica en
+                        proyectos corporativos, industriales, comerciales y de misión crítica.
+                    </p>
+                    <ul class="list-check">
+                        <li>Diseño de arquitectura de red y segmentación por servicio.</li>
+                        <li>Integración de enlaces satelitales con fibra, LTE/5G y radioenlaces.</li>
+                        <li>Monitoreo y soporte técnico de forma remota y en sitio.</li>
+                        <li>Modelos de servicio para hogar, PyME, Enterprise y eventos.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Servicios que te ofrecemos alrededor de Amazon Leo</h3>
+                    <ul class="list-check">
+                        <li>Asesoría sobre la viabilidad de Amazon Leo en tu ubicación.</li>
+                        <li>Comparativos técnicos frente a Starlink, Viasat y otras tecnologías.</li>
+                        <li>Diseño de escenarios de migración o integración futura.</li>
+                        <li>Instalación profesional y cableado estructurado cuando el servicio esté disponible.</li>
+                        <li>Soporte posventa, monitoreo y ajuste de parámetros de red.</li>
+                    </ul>
+                    <div class="pill-row">
+                        <span class="pill strong">Asesoría</span>
+                        <span class="pill strong">Venta</span>
+                        <span class="pill strong">Instalación</span>
+                        <span class="pill strong">Soporte</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disponibilidad en México -->
+    <section id="disponibilidad">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker">Planificación</div>
+                <h2 class="section-title">¿Cuándo podría estar Amazon Leo disponible en México?</h2>
+                <p class="section-description">
+                    A la fecha, Amazon no ha publicado una fecha oficial específica para México. Sin embargo, el despliegue
+                    global de su constelación LEO apunta a una ventana estimada a partir de 2026, con activaciones
+                    progresivas por región.
+                </p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <span class="badge">Línea de tiempo estimada</span>
+                    <h3>Despliegue global y ventana para Latinoamérica</h3>
+                    <ul class="timeline">
+                        <li><span class="year">2025</span> Lanzamientos de satélites de producción y pruebas con clientes empresariales.</li>
+                        <li><span class="year">2026</span> Inicio de servicio comercial en regiones priorizadas por Amazon.</li>
+                        <li><span class="year">2026–2027</span> Posible extensión a países de Latinoamérica, sujeto a regulaciones y acuerdos locales.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        Importante: esta información es referencial y puede cambiar. CiBERALL® monitorea de forma
+                        permanente los anuncios oficiales para ayudarte a reaccionar a tiempo.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="badge">Acción recomendada</span>
+                    <h3>Déjanos tus datos y te avisamos cuando haya novedades</h3>
+                    <p>
+                        Si quieres ser de los primeros en evaluar Amazon Leo para tu empresa, operación o comunidad,
+                        podemos notificarte en cuanto haya información confirmada sobre disponibilidad y modelos de servicio.
+                    </p>
+                    <a href="#contacto" class="btn-primary" style="margin-top:0.7rem;">
+                        Quiero estar en la lista de aviso
+                    </a>
+                    <p class="form-footnote" style="margin-top:0.6rem;">
+                        Te contactaremos únicamente para compartirte actualizaciones relevantes sobre Amazon Leo y
+                        alternativas satelitales compatibles con tu proyecto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluciones actuales -->
+    <section id="soluciones">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker">Conectividad hoy</div>
+                <h2 class="section-title">Soluciones disponibles mientras llega Amazon Leo</h2>
+                <p class="section-description">
+                    No tienes que esperar a que Amazon Leo llegue a México para operar con conectividad premium.
+                    CiBERALL® ya integra soluciones satelitales y de fibra óptica listas para producción.
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-tag">Satelital</div>
+                    <div class="solution-title">Internet vía satélite (Starlink & otros)</div>
+                    <p>
+                        Planes para hogar, PyME y negocio, con instalación profesional, alineación, cableado
+                        y soporte técnico integral.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-tag">Multi-WAN</div>
+                    <div class="solution-title">Redes SD-MultiWAN híbridas</div>
+                    <p>
+                        Combinación inteligente de satélite, fibra, radioenlace y 4G/5G para maximizar
+                        disponibilidad y resiliencia.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-tag">Eventos</div>
+                    <div class="solution-title">Internet profesional para eventos</div>
+                    <p>
+                        Conectividad diseñada para congresos, expos, conciertos y ferias, con capacidad
+                        simétrica y gestión de usuarios.
+                    </p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-tag">Movilidad</div>
+                    <div class="solution-title">Conectividad en movimiento</div>
+                    <p>
+                        Soluciones para vehículos, flotas y embarcaciones, con equipo especializado
+                        para operación en ruta.
+                    </p>
+                </div>
+            </div>
+
+            <div style="margin-top:1.5rem; display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; align-items:center;">
+                <p style="font-size:0.9rem; color:var(--text-muted); max-width:520px;">
+                    Podemos ayudarte a diseñar un esquema donde tu proyecto funcione hoy con tecnologías disponibles,
+                    y esté listo para integrar Amazon Leo cuando sea viable, sin migraciones traumáticas.
+                </p>
+                <a href="https://ciberall.net/precios/" target="_blank" class="btn-outline">
+                    Ver planes de conectividad CiBERALL®
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker">Preguntas frecuentes</div>
+                <h2 class="section-title">Dudas frecuentes sobre Amazon Leo y CiBERALL®</h2>
+                <p class="section-description">
+                    Resolvemos las preguntas más comunes que suelen hacer empresas, integradores y usuarios finales
+                    que se están informando sobre Amazon Leo y las alternativas disponibles hoy.
+                </p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Amazon Leo ya está disponible en México?</h3>
+                    <p>
+                        No. Aún no hay una fecha oficial confirmada para México. Amazon se encuentra en fase de despliegue
+                        global y pruebas con clientes seleccionados. CiBERALL® monitorea anuncios y regulaciones para
+                        avisarte cuando exista una ruta clara para el país.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Este sitio pertenece a Amazon o a Amazon Leo?</h3>
+                    <p>
+                        No. Este sitio es un portal informativo independiente operado por CiBERALL®. Nuestro objetivo
+                        es ofrecer orientación técnica y opciones de conectividad, no representar a Amazon ni vender en su nombre.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Amazon Leo será mejor que Starlink?</h3>
+                    <p>
+                        Son propuestas distintas dentro del mismo segmento LEO. La decisión correcta dependerá de
+                        tu caso de uso: ubicación, perfil de tráfico, SLA requerido, presupuesto y redundancia deseada.
+                        CiBERALL® puede ayudarte a comparar opciones de forma neutral y profesional.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Puedo ir planeando mi red pensando en Amazon Leo?</h3>
+                    <p>
+                        Sí. Se puede diseñar una arquitectura de red flexible, basada en estándares IP y equipos
+                        abiertos, que hoy funcione con Starlink, Viasat, fibra u otros, y que esté lista para
+                        integrar Amazon Leo cuando se vuelva una opción disponible.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Quién se encarga de la instalación y soporte?</h3>
+                    <p>
+                        CiBERALL® coordina la instalación física, el alineamiento, la integración con tu red interna,
+                        la configuración de routers multi-WAN y el soporte en operación. Buscamos que tengas un solo
+                        punto de contacto técnico.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Pueden ayudarme si soy proveedor local de internet o integrador?</h3>
+                    <p>
+                        Claro. Podemos colaborar como socio tecnológico, ayudarte a definir portafolio, esquemas
+                        de redundancia y modelos comerciales para ofrecer soluciones satelitales a tus clientes
+                        actuales y futuros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker">Contacto</div>
+                <h2 class="section-title">Conversemos sobre tu proyecto de conectividad</h2>
+                <p class="section-description">
+                    Déjanos tus datos y un breve contexto. Podemos orientarte sobre Amazon Leo, Starlink y otras
+                    opciones satelitales y terrestres para tu caso específico.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Datos de contacto CiBERALL®</h3>
+                    <div class="contact-row">
+                        <strong>WhatsApp directo:</strong><br>
+                        <a href="https://wa.me/525511264075" target="_blank">+52 55 1126 4075</a>
+                    </div>
+                    <div class="contact-row">
+                        <strong>Correo electrónico:</strong><br>
+                        <a href="mailto:contacto@ipviasatelite.net">contacto@IPviaSatelite.net</a>
+                    </div>
+                    <div class="contact-row">
+                        <strong>Sitios web:</strong><br>
+                        <a href="https://ciberall.net/" target="_blank">ciberall.net</a> ·
+                        <a href="https://ipviasatelite.com/" target="_blank">ipviasatelite.com</a>
+                    </div>
+                    <p class="form-footnote">
+                        Compartirás tus datos con CiBERALL®, no con Amazon. Usaremos tu información exclusivamente
+                        para brindarte asesoría en conectividad.
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Formulario de interés – Amazon Leo & conectividad satelital</h3>
+                    <!-- Puedes conectar esto a FormSubmit, JotForm o tu backend -->
+                    <form action="mailto:contacto@ipviasatelite.net" method="post" enctype="text/plain">
+                        <div>
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="Nombre" placeholder="Escribe tu nombre" required>
+                        </div>
+                        <div>
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="Correo" placeholder="tu@empresa.com" required>
+                        </div>
+                        <div>
+                            <label for="telefono">WhatsApp o teléfono</label>
+                            <input type="tel" id="telefono" name="Telefono" placeholder="+52 55 0000 0000">
+                        </div>
+                        <div>
+                            <label for="mensaje">Cuéntanos brevemente tu caso</label>
+                            <textarea id="mensaje" name="Mensaje" placeholder="Ejemplo: cobertura para rancho, sucursal, evento, flota, comunidad, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            Enviar y recibir asesoría
+                        </button>
+                        <p class="form-footnote">
+                            Al enviar este formulario aceptas ser contactado por CiBERALL® para temas relacionados
+                            con conectividad satelital, Amazon Leo y soluciones asociadas.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-legal">
+            <p class="legal-strong">Aviso importante</p>
+            <p>
+                amazon-leo.xyz es un portal informativo independiente operado por CiBERALL®. No tiene relación
+                comercial, societaria ni contractual con Amazon, Amazon Web Services ni Amazon Leo. Toda la
+                información publicada tiene fines informativos y puede cambiar sin previo aviso conforme los
+                anuncios oficiales de Amazon.
+            </p>
+        </div>
+        <div class="footer-links">
+            <span>© <span id="year"></span> CiBERALL® · Todos los derechos reservados.</span>
+            <a href="#top">Volver al inicio</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Año dinámico en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
